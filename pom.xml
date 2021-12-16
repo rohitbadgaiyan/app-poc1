@@ -32,10 +32,9 @@
 						<password>${password}</password>
 						<!-- Environment Parameter -->
 						<environment>${environment}</environment>
-						<applicationName>${cloudhub.appname}</applicationName>
-						<businessGroup>${cloudhub.bg}</businessGroup>
-						<workerType>${cloudhub.worker}</workerType>
 						<objectStoreV2>true</objectStoreV2>
+						<muleVersion>4.4.0</muleVersion>
+						<applicationName>e-app-poc1-${environment}</applicationName>
 					</cloudHubDeployment>
 					<sharedLibraries>
 						<!-- Shared Dependencies -->
