@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <mule xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
-    <global-property name="environment" value="DEV"/>
-	<configuration-properties doc:name="Configuration properties" doc:id="8443b870-bef7-4770-b58d-69a520fbc468" file="${environment}_properties.yaml"/>
+    <global-property name="env" value="DEV"/>
+	<configuration-properties doc:name="Configuration properties" doc:id="8443b870-bef7-4770-b58d-69a520fbc468" file="${env}_properties.yaml"/>
 	
     <http:listener-config doc:id="07f3caeb-47a7-4738-89d6-23e1e886ffee" doc:name="CloudHub HTTP" doc:timestamp="1635262173883" name="cloudhub_http">
         <http:listener-connection host="0.0.0.0" port="${http.port}"/>
