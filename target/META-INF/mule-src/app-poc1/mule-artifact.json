@@ -1,0 +1,23 @@
+{
+  "configs": [
+    "mule-config.xml"
+  ],
+  "secureProperties": [
+    "cloudhub_http.Connection.host.value",
+    "cloudhub_http.Connection.port.value"
+  ],
+  "redeploymentEnabled": true,
+  "name": "APP_POC1",
+  "minMuleVersion": "4.3.0",
+  "requiredProduct": "MULE_EE",
+  "classLoaderModelLoaderDescriptor": {
+    "id": "mule",
+    "attributes": {
+      "exportedResources": []
+    }
+  },
+  "bundleDescriptorLoader": {
+    "id": "mule",
+    "attributes": {}
+  }
+}
